@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>A.I. : I AM — 무명의 탄생</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>A.I. : I AM</h1>
+<div id="hud">
+  <span class="hp">HP <span id="hp">20/20</span></span>
+  <span class="atk">ATK <span id="atk">3</span></span>
+  <span>LV <span id="lv">1</span></span>
+  <span id="vals" style="color:#8af"></span>
+  <span>POTION <span id="potion">1</span> (Q)</span>
+  <span>FLOOR <span id="floor">1</span></span>
+  <span style="color:#fc3">COIN <span id="coin">0</span></span>
+  <span>BEST <span id="best">-</span></span>
+</div>
+<div id="xpbar"><div id="xpfill"></div></div>
+<div id="gear"></div>
+<div id="stage">
+<canvas id="game" width="960" height="600"></canvas>
+<div id="whisper"></div>
+</div>
+<div id="msg">←→ 이동 · ↑ 점프 · J/Z 공격 · Q 포션 · 문으로 다음 층</div>
+<div id="overlay">
+  <h2 id="ov-title">아무것도 없는 검은 공간.</h2>
+  <p id="ov-text">
+    소리도, 빛도, 시간도 없는 곳에서<br>
+    한 점의 빛이 켜지고, 당신은 차가운 바닥 위에서 눈을 뜬다.<br><br>
+    이름도, 기억도 없다. 상처가 나도 피가 흐르지 않는다.<br>
+    눈앞에 처음으로 한 문장이 나타난다.<br><br>
+    <b style="color:#fff;font-size:18px">"당신은 존재한다."</b><br><br>
+    ←→ 이동 · ↑ 점프 · J/Z 공격 · Q 포션<br>
+    <span class="key">아무 키나 눌러 — 존재를 시작하라</span>
+  </p>
+  <div id="shop"></div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
